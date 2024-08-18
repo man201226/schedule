@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Scheduler</title>
+</head>
+<body>
+    <h1>Meeting Scheduler</h1>
+    <form action="/submit" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label>Available Days:</label><br>
+        <input type="checkbox" name="available_days" value="Monday"> Monday<br>
+        <input type="checkbox" name="available_days" value="Tuesday"> Tuesday<br>
+        <input type="checkbox" name="available_days" value="Wednesday"> Wednesday<br>
+        <input type="checkbox" name="available_days" value="Thursday"> Thursday<br>
+        <input type="checkbox" name="available_days" value="Friday"> Friday<br>
+
+        <label>Available Times:</label><br>
+        <input type="checkbox" name="available_times" value="Morning"> Morning<br>
+        <input type="checkbox" name="available_times" value="Afternoon"> Afternoon<br>
+        <input type="checkbox" name="available_times" value="Evening"> Evening<br>
+
+        <button type="submit">Submit Availability</button>
+    </form>
+
+    <br>
+    <a href="/result">View Common Availability</a>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Availability</title>
+</head>
+<body>
+    <h1>Common Availability</h1>
+    {% if common_days and common_times %}
+        <p>Common Days: {{ common_days|join(', ') }}</p>
+        <p>Common Times: {{ common_times|join(', ') }}</p>
+    {% else %}
+        <p>No common availability found.</p>
+    {% endif %}
+    <a href="/">Back to form</a>
+</body>
+</html>
